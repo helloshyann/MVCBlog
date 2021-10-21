@@ -13,5 +13,9 @@ namespace MVCBlog.Data
             : base(options)
         {
         }
+
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogPost> BlogPosts { get; set; }
+
     }
 }
